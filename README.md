@@ -74,6 +74,7 @@ MIT
 
 ## 완료된 프로젝트 구조
 
+```
 ImageExtender/
 ├── Cargo.toml        # 프로젝트 설정 및 의존성
 ├── Cargo.lock        # 의존성 잠금 파일
@@ -83,6 +84,7 @@ ImageExtender/
 └── target/
     └── debug/
         └── image_extender.exe  # 빌드된 실행 파일
+```
 
 ## 구현 요약
 
