@@ -3,7 +3,23 @@ name = "image_extender"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "image_extender"
+path = "src/lib.rs"
+
+[[bin]]
+name = "image_extender"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "image_extender_mcp"
+path = "src/bin/mcp_server.rs"
+
 [dependencies]
 image = { version = "0.25", features = ["png"] }
 clap = { version = "4.4", features = ["derive"] }
 walkdir = "2.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+anyhow = "1.0"
